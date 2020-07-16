@@ -9,7 +9,7 @@ class Auth extends Controller
 {
 
     public function page_home(){
-        return view("home",[
+        return view("home_front",[
             "title"=>"Selamat Datang "
         ]);
     }
@@ -39,6 +39,7 @@ class Auth extends Controller
 
         $data = $req->all();
         $data["level"] = $level;
+        $data["status"] = 0;
         $data["created_at"] = $created;
         $users = User::create($data);
 
@@ -61,11 +62,12 @@ class Auth extends Controller
            "password"=>"required|exists:users,password",
         ]);
 
-        $find = User::where(["username" => $req->username,"password" => $req->password]);
+        $find = User::where(["username" => $req->username,"password" => $req->password,"status"=>1]);
         if ($find->count() > 0){
             session([
                "level"=>$find->first()->level,
-               "nama"=>$find->first()->nama
+               "nama"=>$find->first()->nama,
+               "id"=>$find->first()->id,
             ]);
             if ($find->first()->level == 0){
                 $pages = "donatur";
@@ -77,7 +79,7 @@ class Auth extends Controller
             }
             return redirect("/".$pages)->with(["msg"=>"Sukses Login"]);
         }else{
-            return back()->withErrors(["msg"=>"Data Pengguna Tidak Ditemukan"]);
+            return back()->withErrors(["msg"=>"Data Pengguna Tidak Ditemukan / Belum Di Verifikasi"]);
         }
 
     }

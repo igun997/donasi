@@ -39,7 +39,7 @@
                         </div>
                         <div class="form-group">
                             <label >Password</label>
-                            <input type="text" class="form-control" name="password" placeholder="Username">
+                            <input type="password" class="form-control" name="password" placeholder="Username">
                         </div>
                         <div class="form-group">
                             <label >Alamat</label>

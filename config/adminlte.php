@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => 'Donasikan',
-    'logo_img' => 'https://amanahtakaful.org/wp-content/uploads/2019/07/donasi-sekarang-1.png',
+    'logo' => 'Rumaisa Center',
+    'logo_img' => 'logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'Donasikan',
+    'logo_img_alt' => 'Rumaisa Center',
 
     /*
     |--------------------------------------------------------------------------
@@ -352,7 +352,7 @@ return [
     'plugins' => [
         [
             'name' => 'Datatables',
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',

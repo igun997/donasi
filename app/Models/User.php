@@ -6,6 +6,7 @@
 
 namespace App\Models;
 
+use App\Casts\UserStatus;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -34,7 +35,9 @@ class User extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'level' => 'int'
+		'level' => 'int',
+		'created_at' => 'date',
+		'status' => UserStatus::class,
 	];
 
 	protected $hidden = [
@@ -49,6 +52,7 @@ class User extends Model
 		'created_at',
 		'email',
 		'no_hp',
+		'status',
 		'no_rekening',
 		'level'
 	];

@@ -12,15 +12,16 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Kegiatan
- *
+ * 
  * @property int $id
  * @property string $nama
  * @property string $ket
  * @property int|null $category_id
  * @property Carbon $created_at
- *
+ * 
  * @property Category $category
  * @property Collection|KegiatanDetail[] $kegiatan_details
+ * @property Collection|KegiatanPartisipan[] $kegiatan_partisipans
  * @property Collection|Transaksi[] $transaksis
  *
  * @package App\Models
@@ -37,7 +38,6 @@ class Kegiatan extends Model
 	protected $fillable = [
 		'nama',
 		'ket',
-        'created_at',
 		'category_id'
 	];
 
@@ -49,6 +49,11 @@ class Kegiatan extends Model
 	public function kegiatan_details()
 	{
 		return $this->hasMany(KegiatanDetail::class);
+	}
+
+	public function kegiatan_partisipans()
+	{
+		return $this->hasMany(KegiatanPartisipan::class);
 	}
 
 	public function transaksis()

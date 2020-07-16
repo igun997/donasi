@@ -6,6 +6,9 @@
 
 namespace App\Models;
 
+use App\Casts\FileBase;
+use App\Casts\JenisCast;
+use App\Casts\StatusCast;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
@@ -32,7 +35,10 @@ class Transaksi extends Model
 
 	protected $casts = [
 		'total' => 'float',
-		'jenis' => 'int',
+		'jenis' => JenisCast::class,
+		'created_at' => 'date',
+		'status' => StatusCast::class,
+		'bukti' => FileBase::class,
 		'kegiatan_id' => 'int',
 		'user_id' => 'int'
 	];
