@@ -19,22 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c481dd2b-1c66-434f-a504-eb6ddcdd196e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Donatur/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Donatur/Pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Kegiatan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Kegiatan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Transaksi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transaksi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/donatur/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/donatur/donasi.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/donatur/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/donatur/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sekretaris/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sekretaris/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="c481dd2b-1c66-434f-a504-eb6ddcdd196e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +189,7 @@
       <workItem from="1594732299278" duration="3130000" />
       <workItem from="1594816731460" duration="7980000" />
       <workItem from="1594855125971" duration="1903000" />
-      <workItem from="1594857711143" duration="2011000" />
+      <workItem from="1594857711143" duration="2333000" />
     </task>
     <servers />
   </component>
