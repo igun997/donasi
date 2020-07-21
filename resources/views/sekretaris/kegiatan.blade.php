@@ -44,6 +44,9 @@
                                         <a href="{{route("kegiatan.add.partisipan",[$row->id])}}" class="btn btn-primary">
                                             <li class="fa fa-users"></li>
                                         </a>
+                                        <a href="{{route("kegiatan.partisipan.cetak",[$row->id])}}" class="btn btn-primary">
+                                            <li class="fa fa-print"></li>
+                                        </a>
                                     </td>
                                 </tr>
                             @endforeach

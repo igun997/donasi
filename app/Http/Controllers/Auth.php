@@ -31,7 +31,6 @@ class Auth extends Controller
             "password"=>"required",
             "email"=>"required|unique:users,email",
             "no_hp"=>"required|unique:users,no_hp",
-            "no_rekening"=>"required|unique:users,no_rekening",
         ]);
 
         $level = 0;

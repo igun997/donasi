@@ -53,7 +53,6 @@ class User extends Model
 		'email',
 		'no_hp',
 		'status',
-		'no_rekening',
 		'level'
 	];
 

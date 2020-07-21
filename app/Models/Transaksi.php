@@ -37,6 +37,8 @@ class Transaksi extends Model
 		'total' => 'float',
 		'jenis' => JenisCast::class,
 		'created_at' => 'date',
+		'bukti_upload' => 'date',
+		'tgl_donasi' => 'date',
 		'status' => StatusCast::class,
 		'bukti' => FileBase::class,
 		'kegiatan_id' => 'int',
@@ -49,8 +51,13 @@ class Transaksi extends Model
 		'bukti',
 		'jenis',
         'created_at',
+        'bukti_upload',
+        'no_rekening',
+        'atas_nama',
+        'tgl_donasi',
 		'kegiatan_id',
 		'user_id',
+		'no_rekening',
 		'keterangan'
 	];
 

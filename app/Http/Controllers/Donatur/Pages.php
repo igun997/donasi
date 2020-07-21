@@ -21,6 +21,13 @@ class Pages extends Controller
             "total_sisa"=>$total_sisa,
         ]);
     }
+    public function donasi_upload(Request $req,$id){
+        return view("donatur.donasi_upload",[
+            "title"=>"Upload Donasi",
+            "data"=>$id,
+            "req"=>$req
+        ]);
+    }
     public function donasi(){
         $res = Transaksi::where(["user_id"=>session()->get("id"),"jenis"=>1])->get();
         return view("donatur.donasi",[

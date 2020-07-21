@@ -32,7 +32,9 @@ Route::get("/logout","Auth@logout")->middleware("gateway");
 
 Route::prefix("donatur")->namespace("Donatur")->middleware("gateway:0")->group(function (){
     Route::get("/","Pages@home");
-    Route::get("/donasi","Pages@donasi");
+    Route::get("/donasi","Pages@donasi")->name("donasi");
+    Route::get("/donasi/upload/{id}","Pages@donasi_upload")->name("upload.bukti");
+    Route::post("/donasi/upload/{id}","System@donasi_upload")->name("donasi.upload.update");
     Route::get("/donasi/add","Pages@donasi_add")->name("donasi.add");
     Route::post("/donasi/add","System@donasi_insert")->name("donasi.add.insert");
 
@@ -42,6 +44,9 @@ Route::prefix("sekretaris")->namespace("Sekretaris")->middleware("gateway:1")->g
     Route::get("/","Pages@home");
     Route::get("/donatur","Pages@donatur")->name("sekretaris.donatur");
     Route::get("/donatur/verifikasi/{id}/{status}","System@donatur_verifikasi")->name("sekretaris.donatur.verifikasi");
+
+    Route::get("/laporan","Pages@laporan")->name("laporan");
+    Route::post("/laporan/donatur","System@cetak_donatur")->name("laporan.donatur.sekretaris");
 
     Route::get("/category","Pages@category")->name("category.list");
     Route::get("/category/update/{id}","Pages@category_update")->name("category.page.update");
@@ -53,8 +58,10 @@ Route::prefix("sekretaris")->namespace("Sekretaris")->middleware("gateway:1")->g
     Route::get("/kegiatan","Pages@kegiatan")->name("kegiatan.list");
     Route::get("/kegiatan/detail/{id}","Pages@kegiatan_detail")->name("kegiatan.detail");
     Route::get("/kegiatan/add","Pages@kegiatan_add")->name("kegiatan.add");
-    Route::get("/kegiatan/add/partisipan","Pages@kegiatan_add_partisipan")->name("kegiatan.add.partisipan");
-    Route::post("/kegiatan/add/partisipan","System@kegiatan_insert_partisipan")->name("kegiatan.insert.partisipan");
+    Route::get("/kegiatan/add/partisipan/{id}","Pages@kegiatan_add_partisipan")->name("kegiatan.add.partisipan");
+    Route::post("/kegiatan/add/partisipan/{id?}","System@kegiatan_insert_partisipan")->name("kegiatan.insert.partisipan");
+    Route::get("/kegiatan/partisipan/delete/{id}","System@kegiatan_delete_partisipan")->name("kegiatan.partisipan.delete");
+    Route::get("/kegiatan/partisipan/cetak/{id}","System@cetak_absensi")->name("kegiatan.partisipan.cetak");
     Route::post("/kegiatan/add","System@kegiatan_insert")->name("kegiatan.insert");
     Route::get("/kegiatan/update/{id}","Pages@kegiatan_update")->name("kegiatan.page.update");
     Route::post("/kegiatan/update/{id}","System@kegiatan_update")->name("kegiatan.update");

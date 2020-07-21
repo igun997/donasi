@@ -33,9 +33,9 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="/" class="nav-link">Beranda</a></li>
-                <li class="nav-item"><a href="{{route("login")}}" class="nav-link">Login</a></li>
-                <li class="nav-item cta"><a href="{{route("register")}}" class="nav-link"><span>Register</span></a></li>
+                <li class="nav-item"><a id="one" href="/" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a id="tw" href="{{route("login")}}" class="nav-link">Login</a></li>
+                <li class="nav-item cta"><a id="ons" href="{{route("register")}}" class="nav-link"><span>Register</span></a></li>
             </ul>
         </div>
     </div>

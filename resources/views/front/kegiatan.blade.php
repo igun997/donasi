@@ -41,7 +41,7 @@
                                     @foreach(@$data->kegiatan_details()->get() as $images)
                                         <div class="col-md-3">
                                             <div class="card">
-                                                <a href="{{$images->foto}}" class="single_image">
+                                                <a href="{{$images->foto}}" class="image">
                                                     <img class="card-img-top" src="{{$images->foto}}">
                                                 </a>
                                             </div>
@@ -62,7 +62,7 @@
 @section('js')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
     <script>
-        $("a").fancybox();
+        $(".image").fancybox();
     </script>
 @endsection
 

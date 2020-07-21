@@ -15,7 +15,6 @@
                 <form role="form" action="{{route("register")}}" method="post">
                     <div class="card-body">
                         @csrf
-
                         <div class="form-group">
                             <label >Nama Lengkap</label>
                             <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
@@ -23,11 +22,6 @@
                         <div class="form-group">
                             <label >Email</label>
                             <input type="email" class="form-control" name="email" placeholder="Email">
-                        </div>
-
-                        <div class="form-group">
-                            <label >No Rekening</label>
-                            <input type="text" class="form-control" name="no_rekening" placeholder="Contoh : BCA <nomor_rekening>">
                         </div>
                         <div class="form-group">
                             <label >No HP</label>

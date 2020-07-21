@@ -13,7 +13,7 @@ class System extends Controller
 
         $req->validate([
             "total"=>"required|numeric",
-            "bukti"=>"required|mimes:jpg,png,gif"
+            "tgl_donasi"=>"required",
         ]);
 
         $data = $req->all();
@@ -27,10 +27,7 @@ class System extends Controller
         $data["keterangan"] = "";
         $data["kegiatan_id"] = $kegiatan_id;
         $data["created_at"] = date("Y-m-d");
-        if ($req->has("bukti")){
-            $path = $req->file("bukti")->store("public/bukti");
-            $data["bukti"] = $path;
-        }
+        $data["tgl_donasi"] = date("Y-m-d",strtotime($req->tgl_donasi));
         $ins = Transaksi::create($data);
 
         if ($ins){
@@ -39,5 +36,26 @@ class System extends Controller
             return back()->withErrors(["msg"=>"Gagal"]);
         }
 
+    }
+    public function donasi_upload(Request $req,$id){
+        $find = Transaksi::where(["id"=>$id]);
+        if ($find->count() > 0){
+            $update_data = [
+                "bukti_upload"=>date("Y-m-d",strtotime($req->bukti_upload)),
+                "atas_nama"=>$req->atas_nama,
+                "no_rekening"=>$req->no_rekening,
+            ];
+            if ($req->has("bukti")){
+                $path = $req->file("bukti")->store("public/bukti");
+                $update_data["bukti"] = $path;
+            }
+            if ($find->update($update_data)){
+                return redirect(route("donasi"))->with(["msg"=>"Sukses"]);
+            }else{
+                return back()->withErrors(["msg"=>"Gagal Upload Data Donasi"]);
+            }
+        }else{
+            return back()->withErrors(["msg"=>"Data Donasi Tidak Ditemukan"]);
+        }
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Sekretaris;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Kegiatan;
+use App\Models\KegiatanPartisipan;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -119,5 +120,27 @@ class Pages extends Controller
         }else{
             return back()->withErrors(["msg"=>"Data Tidak Ditemukan"]);
         }
+    }
+
+    public function kegiatan_add_partisipan(Request $req,$id){
+        $data = KegiatanPartisipan::all();
+        $kegiatan = Kegiatan::where(["id"=>$id]);
+        if ($kegiatan->count() > 0){
+            return view("sekretaris.kegiatan_partisipan",[
+                "title"=>$kegiatan->first()->nama." - Partisipan",
+                "data"=>$data,
+                "id"=>(($req->has("partisipan"))?$req->partisipan:null),
+                "kegiatan_id"=>$id,
+            ]);
+        }else{
+            return back()->withErrors(["msg"=>"Data Tidak Ditemukan"]);
+        }
+    }
+
+    public function laporan(){
+        return view("sekretaris.laporan",[
+            "title"=>"Laporan",
+            "data"=>null
+        ]);
     }
 }

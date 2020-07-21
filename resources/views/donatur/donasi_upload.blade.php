@@ -15,15 +15,23 @@
                 </div>
                 <div class="card-body">
                     @include("message")
-                    <form action="{{route("donasi.add.insert")}}" enctype="multipart/form-data" method="post">
+                    <form action="{{route("donasi.upload.update",$data)}}" enctype="multipart/form-data" method="post">
                         @csrf
                         <div class="form-group">
-                            <label>Total Donasi</label>
-                            <input type="number" min="0" step="0.1" class="form-control" name="total" required>
+                            <label>Tanggal Transfer</label>
+                            <input type="date" class="form-control" name="bukti_upload" required>
                         </div>
                         <div class="form-group">
-                            <label>Tanggal Donasi</label>
-                            <input type="date"  class="form-control" name="tgl_donasi" required>
+                            <label>Atas Nama</label>
+                            <input type="text" class="form-control" name="atas_nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label>No Rekening</label>
+                            <input type="text" class="form-control" name="no_rekening" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Bukti Upload</label>
+                            <input type="file"  class="form-control" name="bukti" required>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-success" type="submit">Simpan</button>

@@ -11,14 +11,14 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class KegiatanPartisipan
- * 
+ *
  * @property int $id
  * @property int $kegiatan_id
  * @property string $nama
  * @property int $jk
- * @property int $alamat
+ * @property string $alamat
  * @property Carbon|null $created_at
- * 
+ *
  * @property Kegiatan $kegiatan
  *
  * @package App\Models
@@ -31,7 +31,6 @@ class KegiatanPartisipan extends Model
 	protected $casts = [
 		'kegiatan_id' => 'int',
 		'jk' => 'int',
-		'alamat' => 'int'
 	];
 
 	protected $fillable = [
