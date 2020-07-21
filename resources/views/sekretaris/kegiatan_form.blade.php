@@ -37,13 +37,15 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                            @foreach(@$data->kegiatan_details()->get() as $images)
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{{$images->foto}}">
-                                    </div>
-                                </div>
-                            @endforeach
+                                @if(isset($data))
+                                    @foreach($data->kegiatan_details()->get() as $images)
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img class="card-img-top" src="{{$images->foto}}">
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
