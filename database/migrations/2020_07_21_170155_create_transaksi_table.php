@@ -24,7 +24,7 @@ class CreateTransaksiTable extends Migration
             $table->date('tgl_donasi')->nullable();
             $table->string('no_rekening', 69)->nullable();
             $table->integer('kegiatan_id')->nullable()->index('kegiatan_id');
-            $table->integer('user_id')->index('user_id');
+            $table->integer('user_id')->index('user_id')->nullable();
             $table->text('keterangan');
             $table->date('created_at');
         });
