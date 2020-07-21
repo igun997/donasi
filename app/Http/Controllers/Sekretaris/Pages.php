@@ -37,12 +37,76 @@ class Pages extends Controller
         ]);
     }
 
+
+
+    public function category_add(){
+        return view("sekretaris.category_form",[
+            "title"=>"Tambah Kategori",
+            "data"=>null,
+            "route"=>[
+                "name"=>"category.insert",
+                "params"=>[
+
+                ]
+            ]
+        ]);
+    }
+
+    public function category_update($id){
+        $row = Category::where(["id"=>$id]);
+        if ($row->count() > 0){
+            return view("sekretaris.category_form",[
+                "title"=>"Update Kategori",
+                "data"=>$row->first(),
+                "route"=>[
+                    "name"=>"category.update",
+                    "params"=>[
+                        $id
+                    ]
+                ]
+            ]);
+        }else{
+            return  back()->withErrors(["msg"=>"Data Tidak Ditemukan"]);
+        }
+    }
+
     public function kegiatan(){
         $data = Kegiatan::all();
         return view("sekretaris.kegiatan",[
             "title"=>"Data Kegiatan",
             "data"=>$data
         ]);
+    }
+
+    public function kegiatan_add(){
+        return view("sekretaris.kegiatan_form",[
+            "title"=>"Tambah Kegiatan",
+            "data"=>null,
+            "route"=>[
+                "name"=>"kegiatan.insert",
+                "params"=>[
+
+                ]
+            ]
+        ]);
+    }
+
+    public function kegiatan_update(Request $req,$id){
+        $row = Kegiatan::where(["id"=>$id]);
+        if ($row->count() > 0){
+            return view("sekretaris.kegiatan_form",[
+                "title"=>"Update Kegiatan",
+                "data"=>$row->first(),
+                "route"=>[
+                    "name"=>"kegiatan.update",
+                    "params"=>[
+                        $id
+                    ]
+                ]
+            ]);
+        }else{
+            return  back()->withErrors(["msg"=>"Data Tidak Ditemukan"]);
+        }
     }
 
     public function kegiatan_detail($id){

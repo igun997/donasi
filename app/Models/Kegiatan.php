@@ -12,13 +12,13 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Kegiatan
- * 
+ *
  * @property int $id
  * @property string $nama
  * @property string $ket
  * @property int|null $category_id
  * @property Carbon $created_at
- * 
+ *
  * @property Category $category
  * @property Collection|KegiatanDetail[] $kegiatan_details
  * @property Collection|KegiatanPartisipan[] $kegiatan_partisipans
@@ -37,6 +37,7 @@ class Kegiatan extends Model
 
 	protected $fillable = [
 		'nama',
+		'created_at',
 		'ket',
 		'category_id'
 	];

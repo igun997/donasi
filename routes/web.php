@@ -13,7 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/","Auth@page_home")->middleware("gateway");
+Route::get("/",function (){
+   return redirect(route("front.home"));
+});
+
+Route::prefix("/front")->namespace("Front")->group(function (){
+    Route::get("/","Home@index")->name("front.home");
+    Route::get("/detail/{id}","Home@kegiatan_detail")->name("front.kegiatan");
+});
 
 Route::get("/login","Auth@page_login")->middleware("gateway");
 Route::post("/login","Auth@login")->middleware("gateway")->name("login");
@@ -37,16 +44,19 @@ Route::prefix("sekretaris")->namespace("Sekretaris")->middleware("gateway:1")->g
     Route::get("/donatur/verifikasi/{id}/{status}","System@donatur_verifikasi")->name("sekretaris.donatur.verifikasi");
 
     Route::get("/category","Pages@category")->name("category.list");
-    Route::get("/category/update/{id}","Pages@category")->name("category.page.update");
-    Route::get("/category/add","Pages@category")->name("category.insert.page");
+    Route::get("/category/update/{id}","Pages@category_update")->name("category.page.update");
+    Route::get("/category/add","Pages@category_add")->name("category.insert.page");
     Route::get("/category/delete/{id}","System@category_delete")->name("category.delete");
-    Route::get("/category/update/{id}","System@category_update")->name("category.update");
+    Route::post("/category/update/{id}","System@category_update")->name("category.update");
     Route::post("/category/add","System@category_insert")->name("category.insert");
 
     Route::get("/kegiatan","Pages@kegiatan")->name("kegiatan.list");
     Route::get("/kegiatan/detail/{id}","Pages@kegiatan_detail")->name("kegiatan.detail");
     Route::get("/kegiatan/add","Pages@kegiatan_add")->name("kegiatan.add");
+    Route::get("/kegiatan/add/partisipan","Pages@kegiatan_add_partisipan")->name("kegiatan.add.partisipan");
+    Route::post("/kegiatan/add/partisipan","System@kegiatan_insert_partisipan")->name("kegiatan.insert.partisipan");
     Route::post("/kegiatan/add","System@kegiatan_insert")->name("kegiatan.insert");
+    Route::get("/kegiatan/update/{id}","Pages@kegiatan_update")->name("kegiatan.page.update");
     Route::post("/kegiatan/update/{id}","System@kegiatan_update")->name("kegiatan.update");
     Route::post("/kegiatan/delete/{id}","System@kegiatan_delete")->name("kegiatan.delete");
 

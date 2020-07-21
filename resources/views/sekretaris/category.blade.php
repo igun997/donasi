@@ -30,7 +30,7 @@
                                     <td>{{$row->name}}</td>
                                     <td>{{$row->created_at}}</td>
                                     <td>
-                                        <a href="{{route("category.list",[$row->id])}}" class="btn btn-warning">
+                                        <a href="{{route("category.page.update",[$row->id])}}" class="btn btn-warning">
                                             <li class="fa fa-edit"></li>
                                         </a>
                                         <a href="{{route("category.delete",[$row->id])}}" class="btn btn-danger">

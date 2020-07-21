@@ -6,15 +6,16 @@
 
 namespace App\Models;
 
+use App\Casts\FileBase;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class KegiatanDetail
- * 
+ *
  * @property int $id
  * @property string $foto
  * @property int $kegiatan_id
- * 
+ *
  * @property Kegiatan $kegiatan
  *
  * @package App\Models
@@ -25,7 +26,8 @@ class KegiatanDetail extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'kegiatan_id' => 'int'
+		'kegiatan_id' => 'int',
+        "foto"=>FileBase::class
 	];
 
 	protected $fillable = [

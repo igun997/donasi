@@ -20,7 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c481dd2b-1c66-434f-a504-eb6ddcdd196e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/donasi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/donasi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sekretaris/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sekretaris/Pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sekretaris/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sekretaris/System.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Kegiatan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Kegiatan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/KegiatanDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/KegiatanDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sekretaris/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sekretaris/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sekretaris/category_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sekretaris/category_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sekretaris/kegiatan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sekretaris/kegiatan.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sekretaris/kegiatan_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sekretaris/kegiatan_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +155,7 @@
       <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/sven/artisan-view" />
+      <path value="$PROJECT_DIR$/vendor/orangehill/iseed" />
     </include_path>
   </component>
   <component name="ProjectId" id="1edqRDJoX018q2KWDaT3xqK87IV" />
@@ -191,7 +204,9 @@
       <workItem from="1594732299278" duration="3130000" />
       <workItem from="1594816731460" duration="7980000" />
       <workItem from="1594855125971" duration="1903000" />
-      <workItem from="1594857711143" duration="3216000" />
+      <workItem from="1594857711143" duration="4020000" />
+      <workItem from="1595325853490" duration="599000" />
+      <workItem from="1595331635894" duration="7835000" />
     </task>
     <servers />
   </component>

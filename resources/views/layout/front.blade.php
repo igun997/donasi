@@ -34,7 +34,6 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="/" class="nav-link">Beranda</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Kegiatan</a></li>
                 <li class="nav-item"><a href="{{route("login")}}" class="nav-link">Login</a></li>
                 <li class="nav-item cta"><a href="{{route("register")}}" class="nav-link"><span>Register</span></a></li>
             </ul>
@@ -43,40 +42,7 @@
 </nav>
 <!-- END nav -->
 
-<!-- <div class="js-fullheight"> -->
-<div class="hero-wrap js-fullheight">
-    <div class="overlay"></div>
-    <div id="particles-js"></div>
-    <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-            <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-                <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"></p>
-                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{$title}}</h1>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <h2 class="mb-4">Visi</h2>
-                <p></p>
-            </div>
-        </div>
-        <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <h2 class="mb-4">Misi</h2>
-                <p></p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
+@yield("content")
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
         <div class="row mb-5">
