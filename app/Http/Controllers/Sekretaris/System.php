@@ -168,7 +168,7 @@ class System extends Controller
             "end"=>"required"
         ]);
 
-        $find = User::where(["level"=>0])->whereDate("created_at",[$req->start,$req->end]);
+        $find = User::where(["level"=>0])->where("created_at",">=",$req->start)->where("created_at","<=",$req->end);
         if ($find->count() > 0){
             $data = $find;
             $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->setPaper('a4', 'landscape')->loadView("pdf.donatur",[
