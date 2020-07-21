@@ -47,11 +47,11 @@ class Gateway
                         "icon"=>"fa fa-file"
                     ]);
 
-                    $e->menu->add([
-                        "text"=>"Laporan",
-                        "url"=>"donatur/laporan",
-                        "icon"=>"fa fa-file"
-                    ]);
+//                    $e->menu->add([
+//                        "text"=>"Laporan",
+//                        "url"=>"donatur/laporan",
+//                        "icon"=>"fa fa-file"
+//                    ]);
 
                     $e->menu->add([
                         "text"=>"Logout",
@@ -117,11 +117,11 @@ class Gateway
                         "icon"=>"fa fa-file"
                     ]);
 
-//                    $e->menu->add([
-//                        "text"=>"Laporan",
-//                        "url"=>"bendahara/laporan",
-//                        "icon"=>"fa fa-file"
-//                    ]);
+                    $e->menu->add([
+                        "text"=>"Laporan",
+                        "url"=>"bendahara/laporan",
+                        "icon"=>"fa fa-file"
+                    ]);
 
                     $e->menu->add([
                         "text"=>"Logout",
