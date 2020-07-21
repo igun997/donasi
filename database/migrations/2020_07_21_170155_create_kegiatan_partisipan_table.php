@@ -18,7 +18,7 @@ class CreateKegiatanPartisipanTable extends Migration
             $table->integer('kegiatan_id')->index('kegiatan_id');
             $table->string('nama', 100);
             $table->integer('jk');
-            $table->integer('alamat');
+            $table->text('alamat');
             $table->date('created_at')->nullable();
         });
     }

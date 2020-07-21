@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration
             $table->text('alamat');
             $table->string('email', 30)->nullable();
             $table->string('no_hp', 20)->nullable();
-            $table->string('no_rekening', 50)->nullable();
             $table->integer('level');
             $table->integer('status');
             $table->date('created_at');
