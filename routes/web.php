@@ -70,10 +70,16 @@ Route::prefix("sekretaris")->namespace("Sekretaris")->middleware("gateway:1")->g
 });
 
 Route::prefix("bendahara")->namespace("Bendahara")->middleware("gateway:2")->group(function (){
+
     Route::get("/","Pages@home");
     Route::get("/donasi","Pages@donatur")->name("donasi.donatur");
+    Route::get("/donasi/minus","Pages@donatur_minus")->name("donasi.donatur.minus");
+    Route::post("/donasi/minus","System@donatur_minus")->name("donatur.insert.minus");
+    Route::post("/donasi/plus","System@donatur_plus")->name("donatur.insert.plus");
+    Route::get("/donasi/plus","Pages@donatur_plus")->name("donasi.donatur.plus");
     Route::get("/donasi/verifikasi/{id}/{status}","System@donasi_verifikasi")->name("donasi.donatur.verifikasi");
     Route::get("/operasional","Pages@operasional")->name("operasional.donatur");
-    Route::get("/laporan","Pages@laporan")->name("laporan.donatur");
+    Route::get("/laporan","Pages@laporan");
+    Route::post("/laporan","System@laporan")->name("laporan.donatur.generate");
 
 });

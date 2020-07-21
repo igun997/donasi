@@ -112,10 +112,16 @@ class Gateway
                     ]);
 
                     $e->menu->add([
-                        "text"=>"Laporan",
-                        "url"=>"bendahara/laporan",
+                        "text"=>"Keuangan Keluar / Masuk",
+                        "url"=>"bendahara/operasional",
                         "icon"=>"fa fa-file"
                     ]);
+
+//                    $e->menu->add([
+//                        "text"=>"Laporan",
+//                        "url"=>"bendahara/laporan",
+//                        "icon"=>"fa fa-file"
+//                    ]);
 
                     $e->menu->add([
                         "text"=>"Logout",

@@ -21,6 +21,7 @@
                                 <th>ID</th>
                                 <th>Tgl. Donasi</th>
                                 <th>Status</th>
+                                <th>Total</th>
                                 <th>Bukti</th>
                                 <th>No Rekening</th>
                                 <th>Nama Pengirim</th>
@@ -34,6 +35,8 @@
                                         <td>#{{$row->id}}</td>
                                         <td>{{date("d-m-Y",strtotime($row->tgl_donasi))}}</td>
                                         <td>{{$row->status}}</td>
+
+                                        <td>Rp. {{number_format($row->total)}}</td>
                                         <td>
                                             <p>
                                                 <img src="{{$row->bukti}}" class="img-fluid" alt="">
