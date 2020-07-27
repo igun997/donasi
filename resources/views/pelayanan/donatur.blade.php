@@ -19,7 +19,6 @@
                                 <th>ID</th>
                                 <th>Nama</th>
                                 <th>Alamat</th>
-                                <th>No Rekening</th>
                                 <th>No HP</th>
                                 <th>Status</th>
                                 <th>Dibuat</th>
@@ -32,7 +31,6 @@
                                     <td>#{{$row->id}}</td>
                                     <td>{{$row->nama}}</td>
                                     <td>{{$row->alamat}}</td>
-                                    <td>{{$row->no_rekening}}</td>
                                     <td>{{$row->no_hp}}</td>
                                     <td>{{$row->status}}</td>
                                     <td>{{$row->created_at}}</td>

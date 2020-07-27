@@ -25,7 +25,7 @@ class Home extends Controller
         ]);
     }
     public function kegiatan_detail($id){
-        $data = Kegiatan::where(["id"=>$id]);
+        $data = Kegiatan::where(["id"=>$id,"atasan"=>1,"sekretaris"=>1]);
         if ($data->count() > 0){
             return view("front.kegiatan",[
                 "data"=>$data->first(),

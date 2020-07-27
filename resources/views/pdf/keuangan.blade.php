@@ -45,7 +45,40 @@
     </tr>
 
     </tbody>
+    <tfoot style="border: none;">
+        <tr style="border: none">
+           <td colspan="6">
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>Bendahara Ketua&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Umum Rumaisa Center</p>
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
+                   <br>
+               </p>
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
+                   <br>
+               </p>
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
+                   <br>
+               </p>
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
+                   <br>
+               </p>
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
+                   <br>
+               </p>
+
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'><u>Endang Kuntari</u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dr<u>.Evi Arijani,SpOG, M.kes</u></p>
+
+
+           </td>
+        </tr>
+    </tfoot>
 </table>
 <p style="text-align: left;">Di Cetak Pada :<b>{{date("d-m-Y")}}</b></p>
+
 </body>
 </html>

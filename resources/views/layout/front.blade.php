@@ -48,22 +48,37 @@
         <div class="row mb-5">
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Rumaisa</h2>
-                    <p></p>
+                    <h2 class="ftco-heading-2">Visi</h2>
+                    {!!\App\Models\Setting::where(["set_key"=>"visi"])->first()->set_value!!}
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Dana Terkumpul</h2>
-                    <h1 style="color: white">Rp. {{number_format(\App\Models\Transaksi::where(["jenis"=>1,"status"=>1])->sum("total"))}}</h1>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2" align="center">Kirimkan Bantuan Anda Ke Rekening :</h2>
+                            <h1 style="color: white;" align="center">{!!\App\Models\Setting::where(["set_key"=>"rekening"])->first()->set_value!!}</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Dana Terkumpul</h2>
+                        <h1 style="color: white">Rp. {{number_format(\App\Models\Transaksi::where(["jenis"=>1,"status"=>1])->sum("total"))}}</h1>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Dana Tersalurkan</h2>
+                        <h1 style="color: white">Rp. {{number_format(\App\Models\Transaksi::where(["jenis"=>2,"status"=>1])->sum("total"))}}</h1>
+                    </div>
+                    </div>
                 </div>
             </div>
-
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Dana Tersalurkan</h2>
-                    <h1 style="color: white">Rp. {{number_format(\App\Models\Transaksi::where(["jenis"=>2,"status"=>1])->sum("total"))}}</h1>
+                    <h2 class="ftco-heading-2">Misi</h2>
+                    {!!\App\Models\Setting::where(["set_key"=>"misi"])->first()->set_value!!}
                 </div>
             </div>
 

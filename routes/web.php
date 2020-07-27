@@ -94,7 +94,7 @@ Route::prefix("pelayanan")->namespace("Pelayanan")->middleware("gateway:4")->gro
     Route::post("/kegiatan/add","System@kegiatan_insert")->name("kegiatan.insert");
     Route::get("/kegiatan/update/{id}","Pages@kegiatan_update")->name("kegiatan.page.update");
     Route::post("/kegiatan/update/{id}","System@kegiatan_update")->name("kegiatan.update");
-    Route::post("/kegiatan/delete/{id}","System@kegiatan_delete")->name("kegiatan.delete");
+    Route::get("/kegiatan/delete/{id}","System@kegiatan_delete")->name("kegiatan.delete");
 });
 Route::prefix("pengabdian")->namespace("Pengabdian")->middleware("gateway:5")->group(function (){
     Route::get("/","Pages@home");
