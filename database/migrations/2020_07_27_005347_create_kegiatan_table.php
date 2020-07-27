@@ -18,6 +18,8 @@ class CreateKegiatanTable extends Migration
             $table->string('nama', 100);
             $table->text('ket');
             $table->integer('category_id')->nullable()->index('category_id');
+            $table->integer('atasan')->default(0);
+            $table->integer('sekretaris')->default(0);
             $table->date('created_at');
         });
     }

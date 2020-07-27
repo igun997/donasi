@@ -17,7 +17,7 @@
                 </div>
                 <div class="card-body">
                     @include("message")
-                    <form action="{{(isset($route_name))?$route_name:route("laporan.donatur.generate")}}" method="post">
+                    <form action="{{route("ketua.lap.keuangan")}}" method="post">
                         @csrf
                         <div class="form-group">
                             <label>Mulai</label>

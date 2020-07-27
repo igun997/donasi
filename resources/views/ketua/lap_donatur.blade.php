@@ -12,12 +12,12 @@
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">
-                        Laporan Keuangan
+                        Laporan Donatur
                     </div>
                 </div>
                 <div class="card-body">
                     @include("message")
-                    <form action="{{(isset($route_name))?$route_name:route("laporan.donatur.generate")}}" method="post">
+                    <form action="{{route("ketua.lap.donatur")}}" method="post">
                         @csrf
                         <div class="form-group">
                             <label>Mulai</label>

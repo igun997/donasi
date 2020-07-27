@@ -47,11 +47,11 @@ class Gateway
                         "icon"=>"fa fa-file"
                     ]);
 
-//                    $e->menu->add([
-//                        "text"=>"Laporan",
-//                        "url"=>"donatur/laporan",
-//                        "icon"=>"fa fa-file"
-//                    ]);
+                   $e->menu->add([
+                        "text"=>"Laporan",
+                        "url"=>"donatur/laporan",
+                        "icon"=>"fa fa-file"
+                    ]);
 
                     $e->menu->add([
                         "text"=>"Logout",
@@ -65,18 +65,6 @@ class Gateway
                         "text"=>"Home",
                         "url"=>"sekretaris",
                         "icon"=>"fa fa-home"
-                    ]);
-
-                    $e->menu->add([
-                        "text"=>"Data Donatur",
-                        "url"=>"sekretaris/donatur",
-                        "icon"=>"fa fa-file"
-                    ]);
-
-                    $e->menu->add([
-                        "text"=>"Data Kategori",
-                        "url"=>"sekretaris/category",
-                        "icon"=>"fa fa-file"
                     ]);
 
                     $e->menu->add([
@@ -106,12 +94,6 @@ class Gateway
                     ]);
 
                     $e->menu->add([
-                        "text"=>"Data Donasi",
-                        "url"=>"bendahara/donasi",
-                        "icon"=>"fa fa-file"
-                    ]);
-
-                    $e->menu->add([
                         "text"=>"Keuangan Keluar / Masuk",
                         "url"=>"bendahara/operasional",
                         "icon"=>"fa fa-file"
@@ -130,9 +112,94 @@ class Gateway
                     ]);
                 });
             } elseif ($is_must == 3){
+                Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e){
+                    $e->menu->add([
+                        "text"=>"Home",
+                        "url"=>"ketua",
+                        "icon"=>"fa fa-home"
+                    ]);
 
-            }else{
+                    $e->menu->add([
+                        "text"=>"Kegiatan",
+                        "url"=>"ketua/kegiatan",
+                        "icon"=>"fa fa-file"
+                    ]);
 
+                    $e->menu->add([
+                        "text"=>"Laporan Data Donatur",
+                        "url"=>"ketua/laporan/donatur",
+                        "icon"=>"fa fa-file"
+                    ]);
+
+
+                    $e->menu->add([
+                        "text"=>"Laporan Data Keuangan",
+                        "url"=>"ketua/laporan/keuangan",
+                        "icon"=>"fa fa-file"
+                    ]);
+
+                    $e->menu->add([
+                        "text"=>"Logout",
+                        "url"=>"logout",
+                        "icon"=>"fa fa-sign-out-alt"
+                    ]);
+                });
+            }elseif ($is_must == 4){
+                Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e) {
+
+                    $e->menu->add([
+                        "text" => "Home",
+                        "url" => "pelayanan",
+                        "icon" => "fa fa-home"
+                    ]);
+
+
+
+                    $e->menu->add([
+                        "text"=>"Data Donatur",
+                        "url"=>"pelayanan/donatur",
+                        "icon"=>"fa fa-file"
+                    ]);
+
+                    $e->menu->add([
+                        "text"=>"Data Kategori",
+                        "url"=>"pelayanan/category",
+                        "icon"=>"fa fa-file"
+                    ]);
+
+                    $e->menu->add([
+                        "text"=>"Data Kegiatan",
+                        "url"=>"pelayanan/kegiatan",
+                        "icon"=>"fa fa-file"
+                    ]);
+
+                    $e->menu->add([
+                        "text" => "Logout",
+                        "url" => "logout",
+                        "icon" => "fa fa-sign-out-alt"
+                    ]);
+                });
+            }elseif ($is_must == 5){
+                Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e) {
+
+                    $e->menu->add([
+                        "text" => "Home",
+                        "url" => "pengabdian",
+                        "icon" => "fa fa-home"
+                    ]);
+
+                    $e->menu->add([
+                        "text"=>"Data Donasi",
+                        "url"=>"pengabdian/donasi",
+                        "icon"=>"fa fa-file"
+                    ]);
+
+                    $e->menu->add([
+                        "text" => "Logout",
+                        "url" => "logout",
+                        "icon" => "fa fa-sign-out-alt"
+                    ]);
+                });
             }
 
             if ($level == $is_must){

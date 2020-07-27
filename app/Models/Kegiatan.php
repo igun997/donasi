@@ -6,6 +6,7 @@
 
 namespace App\Models;
 
+use App\Casts\StatusCast;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -32,13 +33,17 @@ class Kegiatan extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'category_id' => 'int'
+		'category_id' => 'int',
+        "sekretaris"=>StatusCast::class,
+        "atasan"=>StatusCast::class,
 	];
 
 	protected $fillable = [
 		'nama',
 		'created_at',
 		'ket',
+		'atasan',
+		'sekretaris',
 		'category_id'
 	];
 

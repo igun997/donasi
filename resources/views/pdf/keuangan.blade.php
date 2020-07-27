@@ -32,16 +32,16 @@
     @endforeach
     <tr>
         <th colspan="2">Total Keluar </th>
-        <th colspan="4">Rp. {{$keluar}} </th>
+        <th colspan="4">Rp. {{number_format($keluar)}} </th>
     </tr>
     <tr>
         <th colspan="2">Total Masuk </th>
-        <th colspan="4">Rp. {{$masuk}} </th>
+        <th colspan="4">Rp. {{number_format($masuk)}} </th>
     </tr>
 
     <tr>
         <th colspan="2">Sisa </th>
-        <th colspan="4">Rp. {{$sisa}} </th>
+        <th colspan="4">Rp. {{number_format($sisa)}} </th>
     </tr>
 
     </tbody>

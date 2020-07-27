@@ -58,6 +58,7 @@ class System extends Controller
         }
 
     }
+
     public function donatur_plus(Request $req){
         $req->validate([
             "total"=>"required",

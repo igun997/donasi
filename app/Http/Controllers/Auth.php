@@ -75,6 +75,12 @@ class Auth extends Controller
 
             }elseif ($find->first()->level == 2){
                 $pages = "bendahara";
+            }elseif ($find->first()->level == 3){
+                $pages = "ketua";
+            }elseif ($find->first()->level == 4){
+                $pages = "pelayanan";
+            }elseif ($find->first()->level == 5){
+                $pages = "pengabdian";
             }
             return redirect("/".$pages)->with(["msg"=>"Sukses Login"]);
         }else{

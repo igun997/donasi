@@ -40,4 +40,11 @@ class Pages extends Controller
             "title"=>"Tambah Donasi"
         ]);
     }
+    public function laporan(){
+        return view("bendahara.laporan",[
+            "title"=>"Laporan",
+            "data"=>null,
+            "route_name"=>route("laporan.donatur.generate.donatur"),
+        ]);
+    }
 }

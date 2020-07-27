@@ -35,14 +35,16 @@
                                     <td>{{$row->atasan}}</td>
                                     <td>{{$row->created_at}}</td>
                                     <td>
-                                        @if($row->sekretaris === "Menunggu")
-                                            <a href="{{route("sekretaris.kegiatan.verifikasi",[$row->id,1])}}" class="btn btn-warning">
-                                                <li class="fa fa-check"></li>
-                                            </a>
+                                        @if($row->sekretaris === "Terverifikasi")
+                                        @if($row->atasan === "Menunggu")
+                                        <a href="{{route("ketua.kegiatan.verifikasi",[$row->id,1])}}" class="btn btn-warning">
+                                            <li class="fa fa-check"></li>
+                                        </a>
 
-                                            <a href="{{route("sekretaris.kegiatan.verifikasi",[$row->id,2])}}" class="btn btn-danger">
-                                                <li class="fa fa-ban"></li>
-                                            </a>
+                                        <a href="{{route("ketua.kegiatan.verifikasi",[$row->id,2])}}" class="btn btn-danger">
+                                            <li class="fa fa-ban"></li>
+                                        </a>
+                                        @endif
                                         @endif
 
                                     </td>

@@ -47,9 +47,7 @@
             <div class="card">
                 <div class="card-body">
                     @include("message")
-                    <a href="{{route("donasi.donatur.plus")}}" class="btn btn-success" style="margin:5px 5px 5px">
-                        <li class="fa fa-plus"></li> Dana Masuk
-                    </a>
+
 
                     <a href="{{route("donasi.donatur.minus")}}" class="btn btn-danger" style="margin:5px 5px 5px">
                         <li class="fa fa-minus"></li> Dana Keluar

@@ -46,10 +46,24 @@
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
         <div class="row mb-5">
-            <div class="col-md">
+            <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Rumaisa</h2>
                     <p></p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Dana Terkumpul</h2>
+                    <h1 style="color: white">Rp. {{number_format(\App\Models\Transaksi::where(["jenis"=>1,"status"=>1])->sum("total"))}}</h1>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Dana Tersalurkan</h2>
+                    <h1 style="color: white">Rp. {{number_format(\App\Models\Transaksi::where(["jenis"=>2,"status"=>1])->sum("total"))}}</h1>
                 </div>
             </div>
 
