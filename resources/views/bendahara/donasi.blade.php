@@ -45,7 +45,8 @@
                                     <td>{{$row->no_rekening}}</td>
                                     <td>{{$row->atas_nama}}</td>
                                     <td>{{$row->user->nama}}</td>
-                                    <td>{{$row->ket}}</td>
+
+                                    <td>{{$row->keterangan}}</td>
                                     <td>
                                         <a href="{{route("donasi.donatur.verifikasi",[$row->id,9])}}" style="margin:2px 2px 2px"  class="btn btn-warning">
                                             <li class="fa fa-spinner"></li> Reset

@@ -20,12 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c481dd2b-1c66-434f-a504-eb6ddcdd196e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/struktur.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/tentang.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Bendahara/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Bendahara/System.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Donatur/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Donatur/System.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Pengabdian/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Pengabdian/System.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bendahara/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bendahara/donasi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bendahara/donasi_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bendahara/donasi_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/donatur/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/donatur/donasi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pdf/donatur.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/donatur.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pdf/keuangan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/keuangan.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pelayanan/donatur.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pelayanan/donatur.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pengabdian/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pengabdian/donasi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pengabdian/donasi_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pengabdian/donasi_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +231,8 @@
       <workItem from="1595344930795" duration="13688000" />
       <workItem from="1595377036248" duration="47000" />
       <workItem from="1595804665611" duration="7529000" />
-      <workItem from="1595817940510" duration="2957000" />
+      <workItem from="1595817940510" duration="3805000" />
+      <workItem from="1596979719226" duration="3093000" />
     </task>
     <task id="LOCAL-00001" summary="Kegiatan Front">
       <created>1595339553892</created>
@@ -285,7 +297,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595811360192</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Revisi">
+      <created>1595832825152</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595832825153</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Seeder">
+      <created>1595832988281</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595832988281</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +335,9 @@
     <MESSAGE value="Donatur" />
     <MESSAGE value="Upload" />
     <MESSAGE value="Revisi Seminar" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Revisi" />
+    <MESSAGE value="Seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seeder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="84" width="383" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1594821128595">
@@ -320,10 +348,10 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="416" y="157" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.742@0.26.1366.742" timestamp="1595810632766" />
-    <state x="278" y="135" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1595811364458">
+    <state x="278" y="135" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1595832990156">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="278" y="135" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1595811364458" />
+    <state x="278" y="135" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1595832990156" />
     <state x="297" y="38" width="764" height="716" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595353721561">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
@@ -347,7 +375,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/donatur/donasi.blade.php</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

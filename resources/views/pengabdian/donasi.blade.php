@@ -25,7 +25,6 @@
                             <th>Status</th>
                             <th>Total</th>
                             <th>Bukti</th>
-                            <th>No Rekening</th>
                             <th>Nama Pengirim</th>
                             <th>Nama Donatur</th>
                             <th>Keterangan</th>
@@ -45,10 +44,11 @@
                                         </p>
                                         <p align="center">{!! (($row->bukti_upload)?"Upload Pada <br>(".date("d-m-Y",strtotime($row->bukti_upload)).")":null) !!}</p>
                                     </td>
-                                    <td>{{$row->no_rekening}}</td>
                                     <td>{{$row->atas_nama}}</td>
                                     <td>{{$row->user->nama}}</td>
-                                    <td>{{$row->ket}}</td>
+
+
+                                    <td>{{$row->keterangan}}</td>
                                     <td>
                                         @if($row->status != "Menunggu")
                                         <a href="{{route("donasi.donatur.verifikasi",[$row->id,9])}}" style="margin:2px 2px 2px"  class="btn btn-warning">

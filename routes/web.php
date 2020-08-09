@@ -19,6 +19,7 @@ Route::get("/",function (){
 
 Route::prefix("/front")->namespace("Front")->group(function (){
     Route::get("/","Home@index")->name("front.home");
+    Route::get("/tentang","Home@tentang")->name("front.tentang");
     Route::get("/detail/{id}","Home@kegiatan_detail")->name("front.kegiatan");
 });
 

@@ -23,7 +23,6 @@
                                 <th>Status</th>
                                 <th>Total</th>
                                 <th>Bukti</th>
-                                <th>No Rekening</th>
                                 <th>Nama Pengirim</th>
                                 <th>Keterangan</th>
                                 <th>Aksi</th>
@@ -43,9 +42,8 @@
                                             </p>
                                             <p align="center">{!! (($row->bukti_upload)?"Upload Pada <br>(".date("d-m-Y",strtotime($row->bukti_upload)).")":null) !!}</p>
                                         </td>
-                                        <td>{{$row->no_rekening}}</td>
                                         <td>{{$row->atas_nama}}</td>
-                                        <td>{{$row->ket}}</td>
+                                        <td>{{$row->keterangan}}</td>
                                         <td>
                                             <a href="" style="margin:2px 2px 2px" class="btn btn-success">
                                                 <li class="fa fa-print"></li>

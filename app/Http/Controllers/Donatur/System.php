@@ -24,7 +24,7 @@ class System extends Controller
         $data["jenis"] = $jenis;
         $data["user_id"] = $user_id;
         $data["status"] = $status;
-        $data["keterangan"] = "";
+        $data["keterangan"] = "Donasi Pada ".date("d-m-Y");
         $data["kegiatan_id"] = $kegiatan_id;
         $data["created_at"] = date("Y-m-d");
         $data["tgl_donasi"] = date("Y-m-d",strtotime($req->tgl_donasi));

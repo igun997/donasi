@@ -13,11 +13,38 @@
         <div class="overlay"></div>
         <div id="particles-js"></div>
         <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-                    <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"></p>
-                    <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{$title}}</h1>
-                </div>
+            <div class="row" style="margin-top: 180px">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Terima Kasih Atas Donasinya
+                                </div>
+                            </div>
+                            <div class="card-body" >
+                                <div class="table-responsive" style="max-height: 300px;">
+                                    <table class="table-bordered table"  >
+                                        <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama</th>
+                                            <th>Total Donasi</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach(\App\Models\Transaksi::join("users","users.id","transaksi.user_id")->where(["transaksi.jenis"=>1,"transaksi.status"=>1,"users.level"=>0])->whereNotNull("transaksi.user_id")->get() as $num => $row)
+                                                <tr>
+                                                    <td>{{($num+1)}}</td>
+                                                    <td>{{$row->user()->first()->nama}}</td>
+                                                    <td>Rp. {{number_format($row->total)}}</td>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>

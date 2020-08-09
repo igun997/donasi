@@ -14,7 +14,6 @@
     <tbody>
     <tr>
         <td style="width: 8.585%;">No</td>
-        <td style="width: 31.415%;">ID</td>
         <td style="width: 20%;">Total</td>
         <td style="width: 20%;">Tgl. Transaksi</td>
         <td style="width: 20%;">Jenis</td>
@@ -23,37 +22,34 @@
     @foreach($data->get() as $num => $person)
         <tr>
             <td style="width: 8.585%;">{{$num+1}}</td>
-            <td style="width: 31.415%;">#{{$person->id}}</td>
             <td style="width: 20%;">Rp. {{number_format($person->total)}}</td>
-            <td style="width: 20%;">{{date("d-m-Y",strtotime($person->created_at))}}</td>
+            <td style="width: 20%;">{{date("d-m-Y",strtotime($person->tgl_donasi))}}</td>
             <td style="width: 20%;">{{$person->jenis}}</td>
             <td style="width: 20%;">{{$person->keterangan}}</td>
         </tr>
     @endforeach
     <tr>
         <th colspan="2">Total Keluar </th>
-        <th colspan="4">Rp. {{number_format($keluar)}} </th>
+        <th colspan="3">Rp. {{number_format($keluar)}} </th>
     </tr>
     <tr>
         <th colspan="2">Total Masuk </th>
-        <th colspan="4">Rp. {{number_format($masuk)}} </th>
+        <th colspan="3">Rp. {{number_format($masuk)}} </th>
     </tr>
 
     <tr>
         <th colspan="2">Sisa </th>
-        <th colspan="4">Rp. {{number_format($sisa)}} </th>
+        <th colspan="3">Rp. {{number_format($sisa)}} </th>
     </tr>
 
     </tbody>
     <tfoot style="border: none;">
         <tr style="border: none">
-           <td colspan="6">
+           <td colspan="5">
 
                <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>Bendahara Ketua&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Umum Rumaisa Center</p>
 
-               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
-                   <br>
-               </p>
+
 
                <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
                    <br>
@@ -67,11 +63,7 @@
                    <br>
                </p>
 
-               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'>
-                   <br>
-               </p>
-
-               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'><u>Endang Kuntari</u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dr<u>.Evi Arijani,SpOG, M.kes</u></p>
+               <p style='margin-bottom: 0in;line-height: 100%;text-align: left;font-family: "Times New Roman", serif;'><u>Endang Kuntari</u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dr <u>.Evi Arijani,SpOG, M.kes</u></p>
 
 
            </td>

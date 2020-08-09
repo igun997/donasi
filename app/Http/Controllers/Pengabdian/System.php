@@ -46,7 +46,7 @@ class System extends Controller
             "password"=>$req->email,
             "alamat"=>$req->alamat,
             "no_hp"=>$req->no_hp,
-            "level"=>1,
+            "level"=>0,
             "status"=>1,
             "created_at"=>date("Y-m-d"),
         ]);
@@ -61,7 +61,8 @@ class System extends Controller
                 "atas_nama"=>null,
                 "status"=>1,
                 "no_rekening"=>null,
-                "tgl_donasi"=>date("Y-m-d"),
+
+                "tgl_donasi"=>$req->tgl_donasi,
                 "user_id"=>$id,
                 "keterangan"=>$req->ket
             ]);

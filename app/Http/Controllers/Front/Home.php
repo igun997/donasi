@@ -24,6 +24,7 @@ class Home extends Controller
             "total_sisa"=>$total_sisa,
         ]);
     }
+
     public function kegiatan_detail($id){
         $data = Kegiatan::where(["id"=>$id,"atasan"=>1,"sekretaris"=>1]);
         if ($data->count() > 0){
@@ -34,5 +35,12 @@ class Home extends Controller
         }else{
             return back();
         }
+    }
+
+    public function tentang()
+    {
+        return view("front.tentang",[
+
+        ]);
     }
 }

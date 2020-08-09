@@ -43,11 +43,11 @@ class System extends Controller
             "created_at"=>date("Y-m-d"),
             "jenis"=>2,
             "bukti"=>null,
+            "tgl_donasi"=>$req->tgl_donasi,
             "bukti_upload"=>null,
             "atas_nama"=>null,
             "status"=>1,
             "no_rekening"=>null,
-            "tgl_donasi"=>date("Y-m-d"),
             "user_id"=>null,
             "keterangan"=>$req->keterangan
         ]);
@@ -92,7 +92,7 @@ class System extends Controller
                 "atas_nama"=>null,
                 "status"=>1,
                 "no_rekening"=>null,
-                "tgl_donasi"=>date("Y-m-d"),
+                "tgl_donasi"=>$req->tgl_donasi,
                 "user_id"=>$id,
                 "keterangan"=>$req->ket
             ]);

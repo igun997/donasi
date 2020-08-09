@@ -18,7 +18,6 @@
         <td style="width: 20%;">No HP</td>
         <td style="width: 20%;">Email</td>
         <td style="width: 20%;">Alamat</td>
-        <td style="width: 20%;">Nomor Rekening</td>
         <td style="width: 20%;">Daftar</td>
     </tr>
     @foreach($data->get() as $num => $person)
@@ -28,7 +27,6 @@
             <td style="width: 20%;">{{$person->no_hp}}</td>
             <td style="width: 20%;">{{$person->email}}</td>
             <td style="width: 20%;">{{$person->alamat}}</td>
-            <td style="width: 20%;">{{$person->no_rekening}}</td>
             <td style="width: 20%;">{{date("d-m-Y",strtotime($person->created_at))}}</td>
         </tr>
     @endforeach

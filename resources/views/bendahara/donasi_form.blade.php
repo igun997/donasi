@@ -50,6 +50,11 @@
                                 <label>Total Dana Keluar</label>
                                 <input type="number" name="total" class="form-control">
                             </div>
+
+                            <div class="form-group">
+                                <label>Tanggal Transaksi</label>
+                                <input type="date"  class="form-control" name="tgl_donasi" required>
+                            </div>
                             <div class="form-group">
                                 <label>Keterangan</label>
                                 <textarea name="keterangan" id="" class="form-control" cols="30" rows="10"></textarea>
