@@ -20,23 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c481dd2b-1c66-434f-a504-eb6ddcdd196e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/struktur.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/tentang.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/email.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Bendahara/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Bendahara/System.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Donatur/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Donatur/System.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Pengabdian/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Pengabdian/System.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bendahara/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bendahara/donasi.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bendahara/donasi_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bendahara/donasi_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/donatur/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/donatur/donasi.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/front.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pdf/donatur.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/donatur.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pdf/keuangan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdf/keuangan.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pengabdian/donasi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pengabdian/donasi.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pengabdian/donasi_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pengabdian/donasi_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +174,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pengabdian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
@@ -233,6 +220,7 @@
       <workItem from="1595804665611" duration="7529000" />
       <workItem from="1595817940510" duration="3805000" />
       <workItem from="1596979719226" duration="3093000" />
+      <workItem from="1598571586385" duration="3141000" />
     </task>
     <task id="LOCAL-00001" summary="Kegiatan Front">
       <created>1595339553892</created>

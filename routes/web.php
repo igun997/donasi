@@ -27,6 +27,7 @@ Route::get("/login","Auth@page_login")->middleware("gateway");
 Route::post("/login","Auth@login")->middleware("gateway")->name("login");
 
 Route::get("/register","Auth@page_register")->middleware("gateway");
+Route::get("/aktivasi","Auth@verifikasi")->middleware("gateway")->name("verifikasi");
 Route::post("/register","Auth@register")->middleware("gateway")->name("register");
 
 Route::get("/logout","Auth@logout")->middleware("gateway");

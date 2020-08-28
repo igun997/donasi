@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class Auth extends Controller
 {
@@ -24,6 +25,21 @@ class Auth extends Controller
             "title"=>"Halaman Register",
         ]);
     }
+
+    public function verifikasi(Request $req)
+    {
+        $req->validate([
+            "verif"=>"required"
+        ]);
+        $find = User::where(["id"=>base64_decode($req->verif)]);
+        if ($find->count() > 0){
+            $find->update(["status"=>1]);
+            return redirect(route("login"))->with(["msg"=>"Email Telah Di Verifikasi"]);
+        }else{
+            return redirect(route("login"))->withErrors(["msg"=>"Invalid Verification"]);
+        }
+
+    }
     public function register(Request $req){
         $req->validate([
             "nama"=>"required",
@@ -43,6 +59,15 @@ class Auth extends Controller
         $users = User::create($data);
 
         if ($users){
+            $data_mail = [
+                "link"=>route("verifikasi",["verif"=>base64_encode($users->id)]),
+                "data"=>$data
+            ];
+            Mail::send("email",$data_mail,function ($msg) use ($data){
+                $msg->to($data["email"],$data["nama"])->subject("Email Verifikasi");
+                $msg->from("info@rumaisacenter.online","Email Verifikasi");
+
+            });
             return back()->with(["msg"=>"Sukses Simpan , Silahkan Cek Email Anda "]);
         }else{
             return back()->withErrors(["msg"=>"Error Server"]);
